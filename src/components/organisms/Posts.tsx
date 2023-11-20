@@ -4,15 +4,15 @@ const Posts = () => {
       <div className="flex flex-col md:flex-row">
         {/* Left Post */}
         <div className="relative ml-40 mr-20 mt-40 h-694 w-[34.14%] md:mr-20">
-          <img
-            src="/assets/images/leftpost.jpg"
-            alt="Left Post"
-            className="h-418 w-full object-cover"
-          />
-          <div className="absolute left-2.5 top-2.5 m-0 mb-10 ml-10 font-fahkwang text-lg font-semibold leading-6 tracking-wider text-white">
-            <h2 className="text-xl text-white">
-              Moose safari in Central Sweden
-            </h2>
+          <div className="relative h-418 w-full">
+            <img
+              src="/assets/images/leftpost.jpg"
+              alt="Left Post"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute bottom-9 left-8 z-10 font-fahkwang text-lg font-semibold leading-6 tracking-wider text-white">
+              <h2 className="text-xl">Moose safari in Central Sweden</h2>
+            </div>
           </div>
           <div className="mt-26">
             <ul>
@@ -27,15 +27,17 @@ const Posts = () => {
 
         {/* Right Post */}
         <div className="relative my-40 mr-40 h-694 w-[58.04%]">
-          <img
-            src="/assets/images/rightpost.jpg"
-            alt="Right Post"
-            className="h-418 w-full object-cover"
-          />
-          <div className="absolute left-2.5 top-2.5 p-4">
-            <h2 className="text-xl text-white">
-              Brunch at the archipelagos of Gothenburg
-            </h2>
+          <div className="relative h-418 w-full">
+            <img
+              src="/assets/images/rightpost.jpg"
+              alt="Right Post"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute bottom-9 left-8 z-10 font-fahkwang text-lg font-semibold leading-6 tracking-wider text-white">
+              <h2 className="text-xl">
+                Brunch at the archipelagos of Gothenburg
+              </h2>
+            </div>
           </div>
           <div className="mt-26">
             <p>
