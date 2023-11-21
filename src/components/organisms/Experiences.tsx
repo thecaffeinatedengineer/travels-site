@@ -30,8 +30,8 @@ const experiences = [
 
 const Experiences = () => {
   return (
-    <div className="bg-custom">
-      <div className="p-5 text-center">
+    <div className="w-full bg-custom pb-10">
+      <div className="py-8 text-center">
         <h3 className="text-2xl font-bold text-gray-800">
           Adventure awaits out there
         </h3>
@@ -40,24 +40,28 @@ const Experiences = () => {
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4">
-        {experiences.map((experience) => (
+      <div className="flex flex-wrap justify-center gap-5 md:justify-start">
+        {experiences.map((experience, index) => (
           <div
             key={experience.id}
-            className="flex flex-col align-left bg-black p-4 shadow-md"
+            className={`flex w-full flex-col items-start bg-black shadow-md md:w-[22%] ${
+              index === 0 ? 'md:ml-10' : ''
+            } ${index === experiences.length - 1 ? 'md:mr-10' : ''}`}
           >
             <img
               src={experience.imageUrl}
               alt={experience.title}
               className="h-48 w-full object-cover"
             />
-            <h4 className="my-2 text-lg font-semibold text-white">
-              {experience.title}
-            </h4>
-            <p className="text-sm text-white">{experience.body}</p>
-            <button className="mt-3 bg-white px-4 py-2 text-black">
-              Book Experience
-            </button>
+            <div className="w-full px-8 py-6">
+              <h4 className="my-2 text-lg font-semibold text-white">
+                {experience.title}
+              </h4>
+              <p className="text-sm text-white">{experience.body}</p>
+              <button className="mt-3 w-full bg-white px-4 py-2 text-black">
+                Book Experience
+              </button>
+            </div>
           </div>
         ))}
       </div>
