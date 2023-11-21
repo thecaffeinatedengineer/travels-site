@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Posts = () => {
@@ -7,7 +8,7 @@ const Posts = () => {
         {/* Left Post */}
         <div className="relative ml-40 mr-20 mt-40 h-694 w-[34.14%] md:mr-20">
           <div className="relative h-418 w-full">
-            <img
+            <Image
               src="/assets/images/leftpost.jpg"
               alt="Left Post"
               className="h-full w-full object-cover"
@@ -30,7 +31,7 @@ const Posts = () => {
             <div className="my-8">
               <p className="text-sm text-black">From £150 per person</p>
             </div>
-            <button className="bg-black px-4 py-2 text-white">
+            <button className="bg-black px-4 py-2 text-white" type="button">
               Book Experience
             </button>
           </div>
@@ -39,7 +40,7 @@ const Posts = () => {
         {/* Right Post */}
         <div className="relative my-40 mr-40 h-694 w-[58.04%]">
           <div className="relative h-418 w-full">
-            <img
+            <Image
               src="/assets/images/rightpost.jpg"
               alt="Right Post"
               className="h-full w-full object-cover"
@@ -66,7 +67,7 @@ const Posts = () => {
             <div className="my-8">
               <p className="text-sm text-black">From £150 per person</p>
             </div>
-            <button className="bg-black px-4 py-2 text-white">
+            <button className="bg-black px-4 py-2 text-white" type="button">
               Book Experience
             </button>
           </div>

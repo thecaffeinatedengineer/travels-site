@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 // Example data
@@ -48,7 +49,7 @@ const Experiences = () => {
               index === 0 ? 'md:ml-10' : ''
             } ${index === experiences.length - 1 ? 'md:mr-10' : ''}`}
           >
-            <img
+            <Image
               src={experience.imageUrl}
               alt={experience.title}
               className="h-48 w-full object-cover"
@@ -58,7 +59,10 @@ const Experiences = () => {
                 {experience.title}
               </h4>
               <p className="text-sm text-white">{experience.body}</p>
-              <button className="mt-3 w-full bg-white px-4 py-2 text-black">
+              <button
+                className="mt-3 w-full bg-white px-4 py-2 text-black"
+                type="button"
+              >
                 Book Experience
               </button>
             </div>
