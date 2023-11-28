@@ -31,17 +31,17 @@ const experiences = [
 
 const Experiences = () => {
   return (
-    <div className="w-full bg-custom pb-10">
+    <div className="w-full pb-10 bg-custom">
       <div className="py-8 text-center">
-        <h3 className="text-2xl font-bold text-gray-800">
+        <h3 className="pb-[6px] font-mulish text-lg font-black leading-[18px] tracking-[1.273px] text-[#222]">
           Adventure awaits out there
         </h3>
-        <p className="text-gray-800">
+        <p className="font-mulish text-sm font-normal leading-[18px] tracking-[1.273px] text-[#222]">
           Get out and experience the Scandinavian way of living
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-5 md:justify-start">
+      <div className="flex flex-wrap justify-center gap-7 md:justify-start">
         {experiences.map((experience, index) => (
           <div
             key={experience.id}
@@ -52,15 +52,19 @@ const Experiences = () => {
             <Image
               src={experience.imageUrl}
               alt={experience.title}
-              className="h-48 w-full object-cover"
+              className="object-cover w-full h-48"
+              width={500}
+              height={418}
             />
             <div className="w-full px-8 py-6">
-              <h4 className="my-2 text-lg font-semibold text-white">
+              <h4 className="my-2 font-fahkwang text-sm font-normal leading-[18px] tracking-[1.273px] text-white antialiased">
                 {experience.title}
               </h4>
-              <p className="text-sm text-white">{experience.body}</p>
+              <p className="text-[12px] font-light leading-[15px] tracking-[1.091px] text-white antialiased">
+                {experience.body}
+              </p>
               <button
-                className="mt-3 w-full bg-white px-4 py-2 text-black"
+                className="w-full px-4 py-2 mt-6 text-black bg-white"
                 type="button"
               >
                 Book Experience

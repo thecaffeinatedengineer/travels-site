@@ -16,24 +16,36 @@ export const Navigation = () => {
             Scandinavian Adventures
           </h1>
 
-          <ul className="flex space-x-10 px-7 py-8 font-mulish text-222">
+          <ul className="flex py-8 space-x-10 px-7 font-mulish text-222">
             <li>
-              <a href="#home" className="text-222 ">
+              <a
+                href="#home"
+                className="font-mulish text-sm font-normal leading-[18px] tracking-[1.273px] text-222 text-[#222]"
+              >
                 Experiences
               </a>
             </li>
             <li>
-              <a href="#about" className="text-222">
+              <a
+                href="#about"
+                className="font-mulish text-sm font-normal leading-[18px] tracking-[1.273px] text-222 text-[#222]"
+              >
                 Company
               </a>
             </li>
             <li>
-              <a href="#contact" className="text-222">
+              <a
+                href="#contact"
+                className="font-mulish text-sm font-normal leading-[18px] tracking-[1.273px] text-222 text-[#222]"
+              >
                 Support
               </a>
             </li>
             <li>
-              <a href="#contact" className="text-222">
+              <a
+                href="#contact"
+                className="font-mulish text-sm font-normal leading-[18px] tracking-[1.273px] text-222 text-[#222]"
+              >
                 <Image
                   src={emptyBasketIcon}
                   alt="Empty Basket Icon"

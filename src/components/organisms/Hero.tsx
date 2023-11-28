@@ -12,12 +12,15 @@ const Hero = () => {
         className="absolute z-0"
       />
       <div className="relative z-10 ml-[70px] flex h-full flex-col items-start justify-center text-white">
-        <h1 className="mb-4 text-3xl font-bold">
+        <h1 className="mb-4 font-fahkwang text-lg font-semibold leading-[23px] tracking-[1.636px] text-[#FFF] antialiased">
           Gothenburg winter guided tours
         </h1>
-        <p className="mb-6 text-xl">from £65 per person</p>
+        <p className="mb-5 font-mulish text-sm font-normal leading-[18px] tracking-[1.273px] text-[#FFF] antialiased">
+          from £65 per person
+        </p>
         <button
-          className="bg-white px-6 py-3 text-222 transition"
+          style={{ width: '201px', height: '55px' }}
+          className="shrink-0 bg-white px-6 py-3 text-center font-fahkwang text-sm font-semibold leading-[18px] tracking-[1.273px] text-[#000] transition"
           type="button"
         >
           Book Experience
