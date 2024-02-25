@@ -1,7 +1,12 @@
+import { AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
+
+import Modal from './Modal';
 
 const Hero = () => {
+  const [isModalOpen, setModalOpen] = useState<boolean>(false);
+
   return (
     <div className="relative w-full" style={{ height: '550px' }}>
       <Image
@@ -20,12 +25,16 @@ const Hero = () => {
         </p>
         <button
           style={{ width: '201px', height: '55px' }}
+          onClick={() => setModalOpen(true)}
           className="shrink-0 bg-white px-6 py-3 text-center font-fahkwang text-sm font-semibold leading-[18px] tracking-[1.273px] text-[#000] transition"
           type="button"
         >
           Book Experience
         </button>
       </div>
+      <AnimatePresence>
+        {isModalOpen && <Modal onClose={() => setModalOpen(false)} />}
+      </AnimatePresence>
     </div>
   );
 };

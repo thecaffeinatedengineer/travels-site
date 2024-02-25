@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
 
-// Example data
 const experiences = [
   {
     id: 1,
@@ -41,13 +40,11 @@ const Experiences = () => {
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-7 md:justify-start">
-        {experiences.map((experience, index) => (
+      <div className="flex pl-10 overflow-x-auto no-scrollbar space-x-7">
+        {experiences.map((experience) => (
           <div
             key={experience.id}
-            className={`flex w-full flex-col items-start bg-black shadow-md md:w-[22%] ${
-              index === 0 ? 'md:ml-10' : ''
-            } ${index === experiences.length - 1 ? 'md:mr-10' : ''}`}
+            className="flex-none bg-black shadow-md w-[300px] lg:w-[22%]"
           >
             <Image
               src={experience.imageUrl}

@@ -1,11 +1,10 @@
-// NavComponent.js
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-import emptyBasketIcon from './EmptyBasketIcon.svg';
+import emptyBasketIcon from './images/EmptyBasketIcon.svg';
 
 export const Navigation = () => {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
 
   return (
     <nav className="sticky h-20 text-white">
@@ -62,7 +61,7 @@ export const Navigation = () => {
       <div className="p-4 text-222 md:hidden">
         <button
           type="button"
-          onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           Menu
         </button>
