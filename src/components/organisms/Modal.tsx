@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-import closeIcon from './images/close.svg';
 import addIcon from './images/add.svg';
+import closeIcon from './images/close.svg';
 import subtractIcon from './images/subtract.svg';
 
 interface ModalProps {
@@ -73,7 +73,7 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
                   width={40}
                 />
               </button>
-              <div className="px-4 py-1 text-center border border-black h-[40px] w-[80px]">
+              <div className="h-[40px] w-[80px] border border-black px-4 py-1 text-center">
                 {adultCount}
               </div>
               <button
@@ -103,7 +103,7 @@ const Modal: React.FC<ModalProps> = ({ onClose }) => {
                   width={40}
                 />
               </button>
-              <div className="px-4 py-1 text-center border border-black h-[40px] w-[80px]">
+              <div className="h-[40px] w-[80px] border border-black px-4 py-1 text-center">
                 {childCount}
               </div>
               <button

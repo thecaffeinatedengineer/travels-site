@@ -78,13 +78,12 @@ const Posts = () => {
             <div className="mt-26">
               <p className="font-mulish text-sm font-normal leading-[18px] tracking-[1.273px] text-[#222]">
                 Join a guided boat tour in the archipelago. M/S S:t Erik departs
-                from Lilla Bommen and takes you through the Gothenburg
-                harbor, past the Älvsborg Fortress and down towards the
-                islands of Gothenburg archipelago. Enjoy a lovely boat
-                sightseeing tour in the beautiful archipelago of
-                Gothenburg. During the summer you can can join the
-                prestigious M/S S:t Erik on a guided cruise through the
-                archipelago.
+                from Lilla Bommen and takes you through the Gothenburg harbor,
+                past the Älvsborg Fortress and down towards the islands of
+                Gothenburg archipelago. Enjoy a lovely boat sightseeing tour in
+                the beautiful archipelago of Gothenburg. During the summer you
+                can can join the prestigious M/S S:t Erik on a guided cruise
+                through the archipelago.
               </p>
             </div>
             <div className="my-8">

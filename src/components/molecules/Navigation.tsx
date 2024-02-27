@@ -19,7 +19,7 @@ export const Navigation = () => {
             <li>
               <a
                 href="#home"
-                className="font-mulish text-sm font-normal leading-[18px] tracking-[1.273px] text-222 text-[#222]"
+                className="font-mulish text-sm font-normal leading-[18px] tracking-[1.273px] text-222"
               >
                 Experiences
               </a>
@@ -27,7 +27,7 @@ export const Navigation = () => {
             <li>
               <a
                 href="#about"
-                className="font-mulish text-sm font-normal leading-[18px] tracking-[1.273px] text-222 text-[#222]"
+                className="font-mulish text-sm font-normal leading-[18px] tracking-[1.273px] text-222"
               >
                 Company
               </a>
@@ -35,7 +35,7 @@ export const Navigation = () => {
             <li>
               <a
                 href="#contact"
-                className="font-mulish text-sm font-normal leading-[18px] tracking-[1.273px] text-222 text-[#222]"
+                className="font-mulish text-sm font-normal leading-[18px] tracking-[1.273px] text-222"
               >
                 Support
               </a>
@@ -43,7 +43,7 @@ export const Navigation = () => {
             <li>
               <a
                 href="#contact"
-                className="font-mulish text-sm font-normal leading-[18px] tracking-[1.273px] text-222 text-[#222]"
+                className="font-mulish text-sm font-normal leading-[18px] tracking-[1.273px] text-222"
               >
                 <Image
                   src={emptyBasketIcon}
